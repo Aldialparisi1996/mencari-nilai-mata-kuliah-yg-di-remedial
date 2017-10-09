@@ -1,0 +1,42 @@
+Nama		: Aldi Alparisi
+Fakultas	: FTI
+Prodi		: Sistem Informasi
+
+
+
+
+uses crt;
+var
+alpro,sbo,rti,indonesia,pancasila:integer;
+a,b,c,d,e:string;
+begin
+write('Masukkan nilai ALPRO       :'); readln(alpro);
+write('Masukkan nilai SBO         :'); readln(sbo);
+write('Masukkan nilai RTI         :'); readln(rti);
+write('Masukkan nilai B.Indonesia :'); readln(indonesia);
+write('Masukkan nilai Pancasila   :'); readln(pancasila);
+if (alpro<50) then
+a:='Alpro-'
+else a:='';
+if (sbo<50) then
+b:='SBO-'
+else b:='';
+if (rti<50) then
+c:='RTI-'
+else c:='';
+if (indonesia<50) then
+d:='B.Indonesia-'
+else d:='';
+if (pancasila<50) then
+e:='Pancasila'
+else e:='';
+
+if(alpro and sbo and rti and indonesia and pancasila>=50)
+then
+writeln ('anda tidak mendapat remedial')
+else
+if (alpro and sbo and rti and indonesia and pancasila<50)
+then
+writeln ('anda mendapat remedial: ',a ,b ,c ,d ,e);
+readkey;
+end.
